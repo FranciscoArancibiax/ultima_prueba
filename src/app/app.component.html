@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Logo de la empresa -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/img/MercyDevsLogo.png" alt="Mercy Developers Logo" width="80" height="60" class="d-inline-block align-top mr-2">
+      Mercy Developer
+    </a>
+    
+    <!-- Botón de despliegue para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Elementos del menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/inicio" routerLinkActive="active">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ubicacion" routerLinkActive="active">Ubícanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/servicios">Servicios</a>
+        </li>
+      </ul>
+
+      <!-- Barra de búsqueda (se adapta en dispositivos móviles) -->
+      <form class="d-flex my-2 my-lg-0">
+        <input class="form-control mr-2" type="text" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet> <!-- Donde se cargan las páginas -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+<app-footer></app-footer> <!-- Footer para todas las páginas -->
